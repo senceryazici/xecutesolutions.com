@@ -3,6 +3,7 @@ name: Generate article
 on:
   workflow_dispatch:
 
+    
 env:
   node_version: "18.x"
 
