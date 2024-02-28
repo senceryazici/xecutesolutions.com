@@ -22,7 +22,7 @@ const buildDate = __DATE__;
 
 const { title, lang = null } = Astro.props;
 
-const makeTitle = title ? title + " | " + "Astros" : "Astros - Starter Template for Astro with Tailwind CSS";
+const makeTitle = title ? title + " | " + "Divebotics" : "Divebotics | Dive into the future";
 ---
 
 <!doctype html>
@@ -42,13 +42,13 @@ const makeTitle = title ? title + " | " + "Astros" : "Astros - Starter Template 
 
 		<SEO
 			title={makeTitle}
-			description="Astros is a starter website template for Astro built with TailwindCSS and alpine js."
+			description="Divebotics is a company that is dedicated to the development of underwater robots and surface vessels."
 			canonical={canonicalURL}
 			openGraph={{
 				basic: {
 					url: canonicalURL,
 					type: "website",
-					title: `Astros - Starter Template for Astro`,
+					title: `Divebotics - Dive into the future`,
 					image: resolvedImageWithDomain,
 				},
 				image: {
@@ -59,7 +59,8 @@ const makeTitle = title ? title + " | " + "Astros" : "Astros - Starter Template 
 
 		<script is:inline>
 			function handleThemeChange() {
-				if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+				// TODO: Set the theme based on the user's preference CHANGED THIS
+				if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: light)").matches)) {
 					document.documentElement.classList.add("dark");
 				} else {
 					document.documentElement.classList.remove("dark");
