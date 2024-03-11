@@ -10,7 +10,7 @@ import AstroPWA from "@vite-pwa/astro";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://divebotics.com",
+	site: "https://xecutesolutions.com",
 	vite: {
 		define: {
 			__DATE__: `'${new Date().toISOString()}'`,
@@ -28,8 +28,8 @@ export default defineConfig({
 			includeAssets: ["favicon.svg"],
 			registerType: "autoUpdate",
 			manifest: {
-				name: "Divebotics",
-				short_name: "Divebotics",
+				name: "Xecute Solutions",
+				short_name: "Xecute Solutions",
 				theme_color: "#ffffff",
 				icons: [
 					{

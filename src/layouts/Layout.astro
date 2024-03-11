@@ -22,7 +22,7 @@ const buildDate = __DATE__;
 
 const { title, lang = null } = Astro.props;
 
-const makeTitle = title ? title + " | " + "Divebotics" : "Divebotics | Dive into the future";
+const makeTitle = title ? title + " | " + "Xecute Solutions" : "Xecute Solutions | Dive into the future";
 ---
 
 <!doctype html>
@@ -42,13 +42,13 @@ const makeTitle = title ? title + " | " + "Divebotics" : "Divebotics | Dive into
 
 		<SEO
 			title={makeTitle}
-			description="Divebotics is a company that is dedicated to the development of underwater robots and surface vessels."
+			description="Xecute Solutions is a company that is dedicated to the development of underwater robots and surface vessels."
 			canonical={canonicalURL}
 			openGraph={{
 				basic: {
 					url: canonicalURL,
 					type: "website",
-					title: `Divebotics - Dive into the future`,
+					title: `Xecute Solutions - Dive into the future`,
 					image: resolvedImageWithDomain,
 				},
 				image: {

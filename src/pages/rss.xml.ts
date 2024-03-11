@@ -12,8 +12,8 @@ export const get = async () => {
 	});
 
 	return rss({
-		title: `Divebotics`,
-		description: "Divebotics - Dive into the future.",
+		title: `Xecute Solutions`,
+		description: "Xecute Solutions - Dive into the future.",
 		site: import.meta.env.SITE,
 
 		items: posts.map((post) => ({
