@@ -13,7 +13,7 @@ export const get = async () => {
 
 	return rss({
 		title: `Xecute Solutions`,
-		description: "Xecute Solutions - Dive into the future.",
+		description: "Xecute Solutions - Automating the future.",
 		site: import.meta.env.SITE,
 
 		items: posts.map((post) => ({
